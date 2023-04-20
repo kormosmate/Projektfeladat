@@ -15,7 +15,7 @@ if (isset($_POST['username']) && isset($_POST['password'])) {
     if ($result->num_rows == 1) {
         // Sikeres bejelentkezés
         $_SESSION['login_user'] = $username;
-        header("Location: http://$_SERVER[SERVER_NAME]/projekt");
+        header("Location: http://$_SERVER[SERVER_NAME]/projekt/dashboard");
         exit();
     } else {
         // Sikertelen bejelentkezés
