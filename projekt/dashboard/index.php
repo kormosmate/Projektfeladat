@@ -45,7 +45,7 @@ if (!isset($_SESSION['login_user'])) {
 						<td><?php echo $row['id']; ?></td>
 						<td><?php echo $row['url']; ?></td>
 						<td>
-							<a href="http://localhost/projekt/<?php echo $row['code']; ?>" target="_blank">
+							<a href="http://<?php echo $_SERVER['SERVER_NAME'] ?>/projekt/<?php echo $row['code']; ?>" target="_blank">
 								<?php echo $row['code']; ?>
 							</a>
 						</td>
