@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteRule ^([a-zA-Z0-9]+)$ redirect.php?code=$1
+RewriteRule ^admin/?$ admin/login.php [L]
+RewriteCond %{QUERY_STRING} ^code=dashboard$
+RewriteRule ^dashboard/$ /projekt/dashboard/? [R=301,L]
